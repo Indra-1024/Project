@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <style>
+    body{
+        height:200vh;
+        /* width: 100vh; */
+    }
        .menu{
         background-color: blue;
         display:flex;
@@ -56,7 +62,19 @@
     a{
         color: blanchedalmond;
     }
-   
+    #questions{
+        background-color: rgb(255, 0, 76); 
+    }
+    body { background-color: #f8f9fa; }
+            .navbar { background-color: #0054a6; }
+            .navbar-brand, .nav-link { color: white !important; }
+            .faq-card { background-color: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 15px; }
+
+            body { background-color: #f8f9fa; }
+        .navbar { background-color: #0054a6; }
+        .navbar-brand, .nav-link { color: white !important; }
+        .faq-card { background-color: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 15px; }
+
 </style>
 
 </head>
@@ -80,7 +98,7 @@
                 <h2><a href="https://www.dominos.co.in/menu/non-veg-pizzas">Mutton Pizzas</a></h2>
                 <h2><a href="https://www.dominos.co.in/menu/beverages">Beverages</a></h2>
                 <h2><a href="https://www.dominos.co.in/menu/burger-pizza">Burger Pizzas</a></h2>
-                <h2><a href="https://www.dominos.co.in/menu/chicken">Chicken Wings</a></h2>
+                <!-- <h2><a href="https://www.dominos.co.in/menu/chicken">Chicken Wings</a></h2> -->
             </div>
     </div>
 
@@ -125,18 +143,30 @@
         <div><img src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/31b713fd-7986-41cc-b963-6d698a34a686_Corn_n_Cheese_Side.webp?ver=V0.0.1" alt="free pizza" height="212" width="214"></div>
     </div>
 
+  
 
-   
-    <!-- <div id="questions">
-        <div><h2>People Also Ask</h2></div>
-        <div>
-            <select name="Question1" id="What is the best menu in Dominoâ€™s?">
-            <option value="">select disabeled</option>
-            <label for="What is the best menu in Dominoâ€™s?">What is the best menu in Dominoâ€™s?</label>
-            <option value="">If you’re a vegetarian, you’ll love Domino’s Veg Extravaganza, <br>Indi Tandoori Paneer, and Mexican Green Wave. For non-vegetarians, Non-Veg Supreme,<br> Chicken Fiesta, and Indi Chicken Tikka top the list. <br>Though these are the most loved Domino’s pizzas along with the cheesy Margherita pizza,<br> you should check out the Domino’s menu to see what you like the most.</option>
-        </select>
-        </div> -->
-    <!-- </div> -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Domino's FAQs</a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <h2 class="text-center">Frequently Asked Questions</h2>
+    
+    <!-- <div class="progress mt-3">
+        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+    </div> -->
+    
+    <button class="btn btn-primary w-100 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">📌 How do I track my order?</button>
+    <div class="collapse mt-2" id="faq1"><div class="faq-card">You can track your order using the Domino's app or website under 'Track Order'.</div></div>
+    
+    <button class="btn btn-primary w-100 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">📌 What payment methods are accepted?</button>
+    <div class="collapse mt-2" id="faq2"><div class="faq-card">Domino's accepts credit/debit cards, PayPal, and cash on delivery in select locations.</div></div>
+    
+    <button class="btn btn-primary w-100 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">📌 Can I modify my pizza toppings?</button>
+    <div class="collapse mt-2" id="faq3"><div class="faq-card">Yes, you can customize your pizza toppings while ordering.</div></div>
+</div>
 
 
 
